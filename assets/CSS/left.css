@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    transition: all 0.35s linear;
+    font-family: var(--font_left);
+}
+
+:root {
+    --size_chu_left: 2vw;
+    --font_left: Lato;
+    --vien_color_left: rgba(23, 87, 236, 0.914);
+}
+
+.left p {
+    font-size: var(--size_chu_left);
+    color: white;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.avt {
+    width: 70%;
+    background-color: white;
+    display: block;
+    border-radius: 50%;
+    margin: 5vw auto 0;
+}
+
+.avt img {
+    display: block;
+    width: 90%;
+    height: auto;
+    padding: 5% 0;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.name {
+    text-align: center;
+    font-size: calc(var(--size_chu_left) * 1.05);
+    text-transform: uppercase;
+}
+
+.hotline {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.hotline>a {
+    width: 15%;
+}
+
+.hotline_items {
+    display: flex;
+    width: 80%;
+    border-radius: 50%;
+    padding: 15%;
+    background-color: white;
+}
+
+.hotline_items:hover {
+    background-color: var(--vien_color_left);
+    scale: 120%;
+}
+
+.nav {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: calc(var(--size_chu_left) * 0.5);
+}
+
+
+
+.nav_items {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: start;
+    align-items: center;
+    margin: 0 auto;
+    gap: 5%;
+    border-radius: var(--size_chu_left);
+}
+
+.icon {
+    font-size: var(--size_chu_left);
+    color: black;
+    text-align: center;
+    background-color: white;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav a p {
+    color: rgb(113, 108, 108);
+}
+
+.nav i {
+    font-size: 1.5vw;
+    padding: 2.5%;
+    border-radius: 50%;
+}
+
+.nav_items:hover {
+    text-decoration: none;
+    background-color: rgb(106, 99, 99);
+    translate: 5% 0;
+    scale: 0.85;
+}
+
+.nav_items:hover .icon {
+    background-color: var(--vien_color_left);
+}
+
+.nav_items:hover p {
+    color: white;
+}
+
+.them {
+    height: 5vh;
+}

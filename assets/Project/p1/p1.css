@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex_row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flex_column {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    width: 100%;
+    background: linear-gradient(to right, rgb(251, 39, 39), white, rgb(0, 94, 255), white);
+}
+
+.introduce_project {
+    width: 90vw;
+    margin: 5vw;
+    gap: 5vw;
+
+}
+
+.details_project {
+    width: 100%;
+    gap: 2.5vw;
+}
+
+/* phan tren*/
+.head {
+    width: 100%;
+    gap: 5%;
+    justify-content: space-evenly;
+}
+
+.head .picture {
+    width: 30%;
+}
+
+.picture img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.head .content {
+    width: 65%;
+}
+
+.content .p0,
+.details_project .p0,
+.download_report .p0 {
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.content .p1,
+.details_project .p1 {
+    font-size: 1.75vw;
+    text-align: justify;
+}
+
+.content .p0:not(:nth-child(1)) {
+    margin-top: 1.5vw;
+}
+
+/* phan duoi*/
+.detail_item {
+    position: relative;
+    width: 95%;
+    gap: 10%;
+    margin-left: 5%;
+}
+
+.detail_item:not(:nth-child(1), :nth-child(2)) {
+    gap: 0.75vw;
+}
+
+.detail_item :not(:nth-child(1), :nth-child(2)) .p0 {
+    width: 100%;
+}
+
+.p .detail_item:nth-child(1) .p0,
+.detail_item:nth-child(2) .p0 {
+    width: 30%;
+}
+
+.indam {
+    font-weight: 600;
+}
+
+a div,
+#return {
+    width: 5vw;
+    height: 2vw;
+    background-color: white;
+    color: red;
+    outline: 0.1rem solid red;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s linear;
+    margin-left: 2vw;
+    padding: 0 2.5vw;
+}
+
+a div span,
+#return span {
+    font-size: 1.5vw;
+}
+
+a div:hover,
+#return:hover {
+    background-color: red;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.picture_left {
+    width: 4vw;
+    border-radius: 50%;
+    position: absolute;
+    outline: 0.1vw solid black;
+    margin-left: -6.75vw;
+}
+
+#return {
+    position: relative;
+    top: 5vw;
+}
